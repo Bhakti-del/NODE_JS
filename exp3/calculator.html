@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+</head>
+
+<body>
+
+<h2>Basic Calculator</h2>
+
+<label>Enter first number:</label>
+<input type="number" id="num1">
+
+<br><br>
+
+<label>Enter second number:</label>
+<input type="number" id="num2">
+
+<br><br>
+
+<label>Choose operation:</label>
+<select id="operator">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+
+<br><br>
+
+<button onclick="calculate()">Enter</button>
+
+<h3>Answer: <span id="result"></span></h3>
+
+<script>
+function calculate() {
+    let n1 = Number(document.getElementById("num1").value);
+    let n2 = Number(document.getElementById("num2").value);
+    let op = document.getElementById("operator").value;
+    let result;
+
+    if (op == "+") {
+        result = n1 + n2;
+    }
+    else if (op == "-") {
+        result = n1 - n2;
+    }
+    else if (op == "*") {
+        result = n1 * n2;
+    }
+    else if (op == "/") {
+        result = n1 / n2;
+    }
+
+    document.getElementById("result").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
