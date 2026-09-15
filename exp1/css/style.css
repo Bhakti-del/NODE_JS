@@ -16,8 +16,8 @@ header{
 }
 footer{
     text-align:center;
-    background:#7190de;
-    color:#0e80b9;
+    background:#63bce9;
+    color:#000000;
     padding:15px;
     margin-top: 20px;
 }
@@ -48,7 +48,7 @@ nav a{
 .active,nav a:hover{background-color:#fff;color:#1184be;}
 .hero{display:flex;justify-content:space-between;align-items:center;padding:50px;}
 .hero img{width: 420px;border-radius: 12px;}
-.btn{background-color: orchid;padding: 15px 20px;border-radius: 2px;}
+.btn{background-color: rgb(102, 169, 246);padding: 15px 20px;border-radius: 2px;}
 .features,.books{display:grid;grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));gap:20px;padding:50px;}
 .form{background:#fff;padding:25px;border-radius:10px;width:420px;display:flex;flex-direction:column;gap:15px;}
 .form input,.form textarea{padding:10px;border-radius:5px;border:1px solid #ccc;width:100%;}
